@@ -1,0 +1,9 @@
+#sigleton模式
+#__new__函数其实调用的比__init__还早，可以理解为new是用来创造实例，而init是初始化实例，
+#其中cls代表该类，self表示该实例，通常用new都会返super(Persion, cls).__new__(cls, ... ...)
+class singleton(object):
+    _instance=None
+    def __new__(cls,*args,*kw):
+        if not cls._instance:
+            _instance=super(singleton,cls).__new__(cls,*args,*kw)
+        return cls._instance
