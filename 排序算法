@@ -16,7 +16,7 @@ def quick_sort(s,start,end):
 def partition(s,start,end):
     key=s[start]
     i=start
-    j=len(s)-1
+    j=end
     while i<j:
         while (i<j) and (s[j]>key):
             j=j-1
