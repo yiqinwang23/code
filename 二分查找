@@ -1,0 +1,7 @@
+#在有序列表list1中[1, 3, 8, 12, 23, 31, 37, 42, 48, 58]中查找值为8的记录的。
+思想：
+1.low=0,high=len(list1)-1
+2.取出=low+high/2, 当low<high时比较key与list1[mid]值的大小：
+    1.如果key=list1[mid],找到结束
+    2.如果key>list1[mid],则查找范围从mid+1,len(list1)-1
+    3.如果key<list1[mid]，则查找范围从low，mid-1
