@@ -33,3 +33,24 @@ for i in range(10):
 print (s)
 s1=quick_sort(s,0,len(s)-1)
 print (s1)
+
+
+选择排序
+def findsmallest(arr):
+    smallest=arr[0]
+    index=0
+    for i in range(1,len(arr)):
+        if arr[i]<smallest:
+            smallest=arr[i]
+            index=i
+    return index
+
+def select_sort(arr):
+    newarr=[]
+    for i in range(len(arr)):
+        smallest=findsmallest(arr)
+        print(smallest)
+        newarr.append(arr.pop(smallest))
+    return newarr
+                      
+print(select_sort([5, 3, 6, 2, 10]))
