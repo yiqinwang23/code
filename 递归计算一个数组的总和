@@ -6,3 +6,9 @@ def sum(a):
 a=[1,2,3,4]
 
 print(sum(a))
+
+递归计算数组中一共有多少个数字
+def sum(a):
+    if a == []:
+        return 0
+    return 1 + sum(a[1:])
