@@ -1,0 +1,18 @@
+#找出数组中重复的数字
+#在一个长度为n的数组里的所有数字都在0-n-1范围内。数组中某些数字是重复的，但不知道有几位数字重复了，也不知道每个数字重复了几次。请找出数组中任意
+#一个重复的数字。例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是重复的数字2或者3
+#方法一：哈希，用空间换时间,如果哈希表没有这个数就加入到哈希表，复杂度O（n)，空间复杂度O（n)
+#方法二：排序，从头扫描，时间复杂度O(nlogn)
+#方法三：
+def ifduplicate(s,dup):
+    lenth = len(s)
+    if len(s)==0:
+        return false
+    for i in range(lenth):
+        if s[i]<0 or s[i]> lenth-1
+            return false
+        while (s[i]!=i):
+            if(s[i]==s[s[i]]):
+                dup = s[i];
+                return true
+            s[i],s[s[i]]=s[s[i]],s[i
